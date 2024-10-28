@@ -651,6 +651,7 @@ class LLMObs(Service):
         """Tags input/output messages for LLM-kind spans.
         Will be mapped to span's `meta.{input,output}.messages` fields.
         """
+        return
         if input_messages is not None:
             try:
                 if not isinstance(input_messages, Messages):
