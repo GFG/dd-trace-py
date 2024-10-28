@@ -54,7 +54,15 @@ from ddtrace.internal.sampling import SamplingMechanism
 from ddtrace.internal.sampling import set_sampling_decision_maker
 from ddtrace.internal.utils.deprecations import DDTraceDeprecationWarning
 from ddtrace.vendor.debtcollector import deprecate
+from ddtrace.llmobs._constants import (
+    INPUT_MESSAGES, INPUT_DOCUMENTS, INPUT_PROMPT,
+    OUTPUT_MESSAGES, OUTPUT_VALUE, OUTPUT_DOCUMENTS,
+)
 
+IGNORED_TAGS = [
+    INPUT_MESSAGES, INPUT_DOCUMENTS, INPUT_PROMPT,
+    OUTPUT_MESSAGES, OUTPUT_VALUE, OUTPUT_DOCUMENTS,
+]
 
 _NUMERIC_TAGS = (_ANALYTICS_SAMPLE_RATE_KEY,)
 
@@ -433,7 +441,8 @@ class Span(object):
         U+FFFD.
         """
         try:
-            self._meta[key] = ensure_text(value, errors="replace")
+            if key not in IGNORED_TAGS:
+                self._meta[key] = ensure_text(value, errors="replace")
         except Exception as e:
             if config._raise:
                 raise e
