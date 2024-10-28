@@ -81,6 +81,10 @@ class _EndpointHook:
             # Users can request the raw response, in which case we need to process on the parsed response
             # and return the original raw APIResponse.
             self._record_response(pin, integration, span, args, kwargs, resp.parse(), error)
+            is_stream = kwargs.get('stream', False)
+            # If the response is a stream, we need to process the stream and return the original raw APIResponse.
+            if is_stream:
+                return resp.parse()
             return resp
         return self._record_response(pin, integration, span, args, kwargs, resp, error)
 
