@@ -84,7 +84,7 @@ def _llmobs_decorator(operation_kind):
         name: Optional[str] = None,
         session_id: Optional[str] = None,
         ml_app: Optional[str] = None,
-        _automatic_io_annotation: bool = True,
+        _automatic_io_annotation: bool = False,
     ):
         def inner(func):
             if iscoroutinefunction(func):
