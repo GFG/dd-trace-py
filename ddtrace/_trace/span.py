@@ -54,15 +54,6 @@ from ddtrace.internal.sampling import SamplingMechanism
 from ddtrace.internal.sampling import set_sampling_decision_maker
 from ddtrace.internal.utils.deprecations import DDTraceDeprecationWarning
 from ddtrace.vendor.debtcollector import deprecate
-from ddtrace.llmobs._constants import (
-    INPUT_MESSAGES, INPUT_DOCUMENTS, INPUT_PROMPT,
-    OUTPUT_MESSAGES, OUTPUT_VALUE, OUTPUT_DOCUMENTS,
-)
-
-IGNORED_TAGS = [
-    INPUT_MESSAGES, INPUT_DOCUMENTS, INPUT_PROMPT,
-    OUTPUT_MESSAGES, OUTPUT_VALUE, OUTPUT_DOCUMENTS,
-]
 
 _NUMERIC_TAGS = (_ANALYTICS_SAMPLE_RATE_KEY,)
 
@@ -440,6 +431,15 @@ class Span(object):
         str in Python 3, with decoding errors in conversion being replaced with
         U+FFFD.
         """
+        from ddtrace.llmobs._constants import (
+            INPUT_MESSAGES, INPUT_DOCUMENTS, INPUT_PROMPT,
+            OUTPUT_MESSAGES, OUTPUT_VALUE, OUTPUT_DOCUMENTS,
+        )
+
+        IGNORED_TAGS = [
+            INPUT_MESSAGES, INPUT_DOCUMENTS, INPUT_PROMPT,
+            OUTPUT_MESSAGES, OUTPUT_VALUE, OUTPUT_DOCUMENTS,
+        ]
         try:
             if key not in IGNORED_TAGS:
                 self._meta[key] = ensure_text(value, errors="replace")
