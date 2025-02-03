@@ -22,7 +22,7 @@ ecdsa==0.14.1
 hypothesis==6.45.0
 idna==2.10
 iniconfig==2.0.0
-jinja2==2.11.3
+jinja2==3.1.5
 jmespath==1.0.1
 jsondiff==2.2.1
 jsonpatch==1.33
