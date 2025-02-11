@@ -9,7 +9,7 @@ certifi==2024.8.30
 cffi==1.17.1
 charset-normalizer==3.3.2
 coverage[toml]==7.6.1
-cryptography==43.0.1
+cryptography==44.0.1
 greenlet==3.1.0
 hypothesis==6.45.0
 idna==3.10
