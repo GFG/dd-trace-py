@@ -11,7 +11,7 @@ charset-normalizer==3.3.2
 click==8.1.7
 coverage[toml]==7.3.2
 flask==2.3.3
-gunicorn==21.2.0
+gunicorn==23.0.0
 hypothesis==6.45.0
 idna==3.4
 iniconfig==2.0.0
