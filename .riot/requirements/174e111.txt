@@ -8,7 +8,7 @@ asgiref==3.8.1
 attrs==23.2.0
 backports-zoneinfo==0.2.1
 coverage[toml]==7.6.0
-django==4.2.14
+django==4.2.21
 django-configurations==2.5.1
 django-hosts==6.0
 exceptiongroup==1.2.2
