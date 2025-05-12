@@ -19,7 +19,7 @@ constantly==15.1.0
 coverage[toml]==7.2.7
 cryptography==43.0.0
 daphne==4.0.0
-django==3.2.25
+django==4.2.21
 django-configurations==2.4.2
 django-picklefield==3.2
 django-pylibmc==0.6.1
