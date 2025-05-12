@@ -31,7 +31,7 @@ jsonpatch==1.33
 jsonpointer==2.4
 langchain==0.0.354
 langchain-community==0.0.8
-langchain-core==0.1.5
+langchain-core==0.1.53
 langchain-experimental==0.0.47
 langsmith==0.0.77
 markupsafe==2.1.3
