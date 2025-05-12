@@ -20,7 +20,7 @@ exceptiongroup==1.2.0
 flask==3.0.0
 frozenlist==1.4.1
 greenlet==3.0.3
-gunicorn==21.2.0
+gunicorn==23.0.0
 hypothesis==6.45.0
 idna==3.6
 importlib-metadata==7.0.1
