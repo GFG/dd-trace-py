@@ -10,7 +10,7 @@ certifi==2024.6.2
 cffi==1.16.0
 charset-normalizer==3.3.2
 coverage[toml]==7.5.3
-cryptography==42.0.7
+cryptography==44.0.1
 googleapis-common-protos==1.63.1
 greenlet==3.0.3
 grpcio==1.64.1
