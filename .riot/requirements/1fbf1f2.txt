@@ -17,7 +17,7 @@ hypothesis==6.45.0
 idna==3.7
 iniconfig==2.0.0
 itsdangerous==1.1.0
-jinja2==2.11.3
+jinja2==3.1.6
 markupsafe==2.0.1
 mock==5.1.0
 opentelemetry-api==1.0.0
