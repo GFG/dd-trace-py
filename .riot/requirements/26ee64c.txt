@@ -52,4 +52,4 @@ zope-event==5.0
 zope-interface==7.0.3
 
 # The following packages are considered to be unsafe in a requirements file:
-setuptools==74.0.0
+setuptools==78.1.1

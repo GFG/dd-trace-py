@@ -33,4 +33,4 @@ zc-lockfile==3.0.post1
 zipp==3.19.2
 
 # The following packages are considered to be unsafe in a requirements file:
-setuptools==71.1.0
+setuptools==78.1.1

@@ -80,4 +80,4 @@ xmltodict==0.13.0
 yarl==1.9.4
 
 # The following packages are considered to be unsafe in a requirements file:
-setuptools==71.1.0
+setuptools==78.1.1
