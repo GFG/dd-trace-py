@@ -26,4 +26,4 @@ sortedcontainers==2.4.0
 sqlparse==0.5.1
 
 # The following packages are considered to be unsafe in a requirements file:
-setuptools==71.1.0
+setuptools==78.1.1

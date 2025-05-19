@@ -71,4 +71,4 @@ xmltodict==0.13.0
 zipp==3.15.0
 
 # The following packages are considered to be unsafe in a requirements file:
-setuptools==68.0.0
+setuptools==78.1.1
