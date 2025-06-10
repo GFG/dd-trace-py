@@ -35,7 +35,7 @@ pytest-asyncio==0.21.1
 pytest-cov==5.0.0
 pytest-mock==3.14.0
 pytest-randomly==3.15.0
-requests==2.28.1
+requests==2.32.4
 sortedcontainers==2.4.0
 urllib3==1.26.19
 werkzeug==2.1.2
